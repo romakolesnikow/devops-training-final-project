@@ -1,0 +1,10 @@
+student_email: romakolesnikow@mail.ru
+postgres_cluster:
+  hosts:
+  - address: 51.250.77.142
+    port: 5432
+  user: postgres
+  password: P@ssw0rd
+  db_name: postgres
+  ssl_mode: disable
+  use_closest_node: false

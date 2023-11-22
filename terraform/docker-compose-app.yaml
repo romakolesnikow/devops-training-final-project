@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  bingo:
+    container_name: bingo
+    image: "cr.yandex/crpopg6s1lst7qelv4ie/bingo:latest"
+    restart: always
+    network_mode: "host"
+    ports:
+      - "80:30238"
