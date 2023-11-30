@@ -1,18 +1,17 @@
-# Use postgres/example user/password credentials
-version: '3.1'
+version: '3.7'
 
 services:
-  db:
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_DB: "postgres"
-      POSTGRES_USER: "postgres"
-      POSTGRES_PASSWORD: "P@ssw0rd"
-    ports:
-      - "5432:5432"
+  # db:
+  #   image: postgres
+  #   restart: always
+  #   environment:
+  #     POSTGRES_DB: "postgres"
+  #     POSTGRES_USER: "postgres"
+  #     POSTGRES_PASSWORD: "P@ssw0rd"
+  #   ports:
+  #     - "5432:5432"
   web:
     image: bingo:latest
     restart: always
     ports:
-      - "80:30238"
+      - "30238:30238"
