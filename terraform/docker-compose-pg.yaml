@@ -6,6 +6,7 @@ services:
       - /home/alpine/pg_data:/var/lib/postgresql/data
     restart: always
     environment:
+      TZ: "Europe/Moscow"
       POSTGRES_DB: "postgres"
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "P@ssw0rd"
